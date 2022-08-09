@@ -1,0 +1,24 @@
+@import './vars.scss';
+
+@mixin swiperArrow($type) {
+      transition: all 0.5s ease;
+      cursor: pointer;
+      width: 45px;
+      height: 26px;
+
+      @if $type ==left {
+            background: url('../img/arrow-left.svg') no-repeat center center;
+      }
+
+      @else if $type ==right {
+            background: url('../img/arrow-right.svg') no-repeat center center;
+      }
+
+      @else if $type ==hoverLeft {
+            background: url('../img/arrow-left-hovered.svg') no-repeat center center;
+      }
+
+      @else if $type ==hoverRight {
+            background: url('../img/arrow-right-hovered.svg') no-repeat center center;
+      }
+}
